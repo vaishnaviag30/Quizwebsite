@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="rules-container" id="rules">
+        <h2>Quiz Rules</h2>
+        <ol>
+            <li>1. Each question has only one correct answer.</li>
+            <li>2. You have 30 seconds to answer each question.</li>
+            <li>3. Your final score will be shown at the end.</li>
+        </ol>
+        <button id="startQuiz">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container hidden" id="quiz">
+        <div id="timer">Time left: <span id="time">30</span>s</div>
+        <h2 id="question">Question text</h2>
+        <ul>
+            <li>
+                <input type="radio" id="a" name="answer" class="answer">
+                <label for="a" id="a_text">Answer A</label>
+            </li>
+            <li>
+                <input type="radio" id="b" name="answer" class="answer">
+                <label for="b" id="b_text">Answer B</label>
+            </li>
+            <li>
+                <input type="radio" id="c" name="answer" class="answer">
+                <label for="c" id="c_text">Answer C</label>
+            </li>
+            <li>
+                <input type="radio" id="d" name="answer" class="answer">
+                <label for="d" id="d_text">Answer D</label>
+            </li>
+        </ul>
+        <button id="submit">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
